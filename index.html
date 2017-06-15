@@ -9,6 +9,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/w3.css">
     <!--    FONTS-->
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="img/favicon.ico">
 </head>
 
 <body class="w3-light-grey">
@@ -34,7 +35,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="w3-third">
                 <div class="w3-white w3-text-grey w3-card-4">
                     <div class="w3-display-container">
-                        <img src="pravindia.github.io/pic.JPG" style="width:100%" alt="Avatar">
+                        <img src="img/pic.JPG" style="width:100%" alt="Avatar">
                         <div class="w3-display-bottomleft w3-container w3-text-black">
                             <h3>Pravin Kumar</h3>
                         </div>
@@ -76,9 +77,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                         <br>
                         <p class="w3-large w3-text-theme">
-                            <b>
-																				<i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages Known
-																			</b>
+                            <b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages Known</b>
                         </p>
                         <p>Tamil</p>
                         <div class="w3-light-grey w3-round-xlarge">
@@ -190,7 +189,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div>
             </div>
-<!--<script type="text/javascript">
+            <!--<script type="text/javascript">
     window.smartlook || (function(d) {
         var o = smartlook = function() {
                 o.api.push(arguments)
@@ -208,6 +207,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </script>-->
         </div>
     </div>
+    <script type="text/javascript">
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("/sw.js").then(function(registration) {
+                console.log("OK!!");
+            }).catch(function(error) {
+                console.log("NO!!!!", error);
+            })
+        }
+
+    </script>
 </body>
 
 </html>
